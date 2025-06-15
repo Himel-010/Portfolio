@@ -70,7 +70,7 @@ function Navigation() {
           {/* Desktop GitHub + Mobile Menu Button */}
           <div className="flex items-center gap-4">
             <motion.a
-              href="https://github.com/CaptainMASUD"
+              href="https://github.com/Himel-010"
               target="_blank"
               whileHover={{ scale: 1.2, rotate: 10 }}
               whileTap={{ scale: 0.9 }}
