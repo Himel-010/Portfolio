@@ -12,22 +12,34 @@ function AboutMe() {
 
   const artworks = [
     {
-      src: "/placeholder.svg?height=500&width=700",
+      src: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=700&h=500&fit=crop",
       title: "Digital Symphony",
       subtitle: "Web Applications",
       description: "Harmonious blend of design and functionality",
     },
     {
-      src: "/placeholder.svg?height=500&width=700",
+      src: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&h=500&fit=crop",
       title: "Mobile Melodies",
       subtitle: "App Development",
       description: "Crafting experiences that sing on every device",
     },
     {
-      src: "/placeholder.svg?height=500&width=700",
+      src: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=700&h=500&fit=crop",
       title: "Code Compositions",
       subtitle: "Full-Stack Solutions",
       description: "Where backend rhythms meet frontend harmonies",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&h=500&fit=crop",
+      title: "Creative Coding",
+      subtitle: "Interactive Design",
+      description: "Bringing imagination to life through code",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=700&h=500&fit=crop",
+      title: "Tech Artistry",
+      subtitle: "Innovation Lab",
+      description: "Where technology meets creative expression",
     },
   ]
 
@@ -40,11 +52,17 @@ function AboutMe() {
   }, [])
 
   const scrollToContact = () => {
-    document.getElementById("contact").scrollIntoView({ behavior: "smooth" })
+    const contactElement = document.getElementById("contact")
+    if (contactElement) {
+      contactElement.scrollIntoView({ behavior: "smooth" })
+    }
   }
 
   return (
-    <section id="about-me" className="relative z-10 min-h-screen flex items-center px-4 pt-20">
+    <section
+      id="about-me"
+      className="relative z-10 min-h-screen flex items-center px-4 pt-20 bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900"
+    >
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content - Poetic Text */}
